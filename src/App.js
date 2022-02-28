@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './Components/Sidebar';
+import Navbar from './Components/Navbar';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
+import { createTheme, ThemeProvider } from '@mui/material';
+import { useContext, useMemo } from 'react';
+import { creaThemeMode } from './Utilities/ThemeApp';
+import { TemaContext } from './Context/ThemeContextProvider.';
 
-function App() {
+export const App = () => {
+  const { mode } = useContext(TemaContext);
+  const theme = useMemo(() => createTheme(creaThemeMode(mode)), [mode]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Navbar />
+      <Main />
+      <Sidebar />
+      <Footer />
+    </ThemeProvider>
   );
-}
-
-export default App;
+};
