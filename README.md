@@ -1,35 +1,35 @@
+# Portafolio web
 <br />
 <div align="center" id="top">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://alexander-portfolio.netlify.app/">
     Alexander
   </a>
 
-  <h3 align="center">Proyecto: Portafolio Alexander</h3>
+  <h3 align="center">Proyecto: Portafolio web Alexander</h3>
 
   <p align="center">
-    Portafolio web.
+    Proyecto de práctica React, Context API y MUI.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Ver en línea</a>
+    <a href="https://alexander-portfolio.netlify.app/" target="_blank">Ver en línea</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
   </p>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## Acerca del proyecto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<div align="center">
+    <img src="https://i.postimg.cc/BQ9p4FzM/image.png" width="400px"</img> 
+</div>
+
 <br/>
-Proyecto realizado para portafolio web. Actualmente en una primera versión.
+Proyecto realizado para practicar React, Context API y Material UI
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Tecnologías utilizadas
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [React.js](https://reactjs.org/)
-* [Bootstrap](https://getbootstrap.com)
-* [React MUI](https://mui.com/)
-* [Firestore](https://firebase.google.com/docs/firestore)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+* [React](https://es.reactjs.org/)
+* [CSS3](https://developer.mozilla.org/es/docs/Web/CSS)
+* [Context API](https://es.reactjs.org/docs/context.html)
+* [Material UI](https://mui.com/)
