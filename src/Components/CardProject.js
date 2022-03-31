@@ -6,11 +6,18 @@ import {
   CardContent,
   CardMedia,
   Typography,
+  List,
+  ListItem,
+  ListItemText,
 } from '@mui/material';
 
-const CardProject = () => {
+const CardProject = ({
+  data: { id, descripcion, img, tecnologias, title, urlRepo, urlView },
+}) => {
   return (
-    <Card>
+    <Card sx={{
+      height: '480px'
+    }}>
       <CardActionArea
         sx={{
           '&:hover': {
@@ -21,27 +28,36 @@ const CardProject = () => {
       >
         <CardMedia
           component="img"
-          image="https://www.eltiempo.com/files/og_paste_img/uploads/2020/12/11/5fd3fae6afe94.jpeg"
+          image={img}
+          width="50px"
+          height="150px"
           alt="imagen referente al proyecto"
         />
       </CardActionArea>
       <CardContent>
-        <Typography variant="button">01 / Project Name</Typography>
-        <Typography component="div">
-          Globin concept digital sculpture with human like skin. Learned a lot
-          of quick tips and look develpment.
-        </Typography>
+        <Typography variant="button">{title}</Typography>
+        <Typography component="div">{descripcion}</Typography>
 
-        <Typography component="div" mt={4}>HTML5, Css3, Javascript, Material UI</Typography>
+        <Typography component="div">
+          <List dense={true}>
+            {tecnologias.map((el, index) => (
+              <ListItem key={index}>
+                <ListItemText>{el}</ListItemText>
+              </ListItem>
+            ))}
+          </List>
+        </Typography>
       </CardContent>
-      <CardActions sx={{
-        display: 'flex',
-        justifyContent: 'center'
-      }}>
-        <Button size="small" variant="contained">
+      <CardActions
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
+        <Button href={urlRepo} target="_blank" size="small" variant="contained">
           View Code
         </Button>
-        <Button size="small" variant="contained">
+        <Button href={urlView} size="small" target="_blank" variant="contained">
           View online
         </Button>
       </CardActions>

@@ -12,7 +12,8 @@ const Footer = () => {
           display: 'flex',
           flexDirection: {
             xs: 'column',
-            sm: 'row-reverse'},
+            sm: 'row-reverse',
+          },
           alignItems: 'center',
           justifyContent: 'space-around',
         }}
@@ -29,7 +30,8 @@ const Footer = () => {
             }}
             mx={2}
             underline="none"
-            href="https://github.com"
+            target="_blank"
+            href="https://github.com/Alexander-Fernando"
           >
             Github
           </Link>
@@ -43,7 +45,8 @@ const Footer = () => {
               },
             }}
             underline="none"
-            href="https://linkedin.com"
+            target="_blank"
+            href="https://www.linkedin.com/in/alexander-gonzalespardo/"
           >
             Linkedin
           </Link>

@@ -22,7 +22,7 @@ const Sidebar = () => {
             sx={{
               backgroundColor: 'primary.main',
             }}
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/alexander-gonzalespardo/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -34,7 +34,7 @@ const Sidebar = () => {
             sx={{
               backgroundColor: 'primary.main',
             }}
-            href="https://github.com"
+            href="https://github.com/Alexander-Fernando"
             target="_blank"
             rel="noopener noreferrer"
           >

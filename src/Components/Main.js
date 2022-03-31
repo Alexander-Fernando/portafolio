@@ -1,11 +1,4 @@
-import {
-  Button,
-  Grid,
-  Typography,
-  Box,
-  Divider,
-  Chip,
-} from '@mui/material';
+import { Button, Grid, Typography, Box, Divider, Chip } from '@mui/material';
 import { Icon } from '@iconify/react';
 import Project from './Project';
 import { useEffect } from 'react';
@@ -37,9 +30,9 @@ const Main = () => {
         alignItems: 'center',
         backgroundColor: 'primary.light',
         px: {
-          xs:10,
-          xl: 30
-        }
+          xs: 10,
+          xl: 30,
+        },
       }}
     >
       {/* ABOUT SECTION */}
@@ -68,22 +61,22 @@ const Main = () => {
         >
           Web developer :)
         </Typography>
-        <Typography component="div" my={5} color="text.primary"
->
+        <Typography component="div" my={5} color="text.primary">
           Soy estudiante de ingeniería de software, actualmente enfocado al
           desarrollo web, en especial, React. Soy un apasionado de la
           tecnología, desarrollo web y autodidacta.
         </Typography>
         <Typography component="div" color="text.primary">
-          Soy estudiante de ingeniería de software, actualmente enfocado al
-          desarrollo web, en especial, React. Soy un apasionado de la
-          tecnología, desarrollo web y autodidacta.
+          Estoy en busca de mi primera oportunidad laboral para crecer
+          profesionalmente y dar lo mejor de mí.
         </Typography>
         <Button
           color="primary"
           size="large"
           variant="contained"
           style={btnStyle}
+          href="https://drive.google.com/file/d/1Wby-mdiycXMfwPtDqFhGEckz8UBqRexY/view?usp=sharing"
+          target="_blank"
           fullWidth
         >
           Descargar CV
@@ -105,14 +98,10 @@ const Main = () => {
           >
             Main Skill
           </Typography>
-          <Typography
-            component="div"
-            textAlign="center"
-            color= 'text.primary'
-          >
-            Algunas lenguajes de marcado, etiqueta y programación que utilizo
-            para el frontend. Entre ellas, HTML5, Css3, Javascript, Typescript y
-            React.
+          <Typography component="div" textAlign="center" color="text.primary">
+            Lenguajes de marcado de Hipertexto, programación y tecnologías que
+            utilizo para el frontend. Entre ellas, HTML5, CSS3, Javascript,
+            Typescript y React.
             <Box
               mt={2}
               style={{
@@ -144,15 +133,11 @@ const Main = () => {
             }}
             color="secondary.light"
           >
-            Herramientas
+            Conocimientos
           </Typography>
-          <Typography
-            component="div"
-            textAlign="center"
-            color= 'text.primary'
-          >
-            Algunas herramientas que utilizo para el frontend. Material UI,
-            Boostrap y Styled-Components.
+          <Typography component="div" textAlign="center" color="text.primary">
+            Algunas herramientas, librerías que utilizo para el frontend.
+            Material UI, Boostrap y Styled-Components.
             <Box
               mt={2}
               sx={{
@@ -188,13 +173,9 @@ const Main = () => {
           >
             Conocimientos Backend
           </Typography>
-          <Typography
-            component="div"
-            textAlign="center"
-            color= 'text.primary'
-          >
-            También, gracias a la realización de proyectos en la universidad
-            tengo nociones básicas de Node, MongoDB, Mysql y Firebase.
+          <Typography component="div" textAlign="center" color="text.primary">
+            También, debido a la realización de proyectos universitarios tengo
+            conocimientos de Node, MongoDB, MySql y Firestore.
             <Box
               mt={2}
               style={{
@@ -220,7 +201,7 @@ const Main = () => {
       </Grid>
 
       {/* PROJECT SECTION */}
-      <Grid item xs={12} container >
+      <Grid id="proyectos" item xs={12} container>
         <Project />
       </Grid>
     </Grid>

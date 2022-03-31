@@ -1,4 +1,11 @@
-import { AppBar, Toolbar, Typography, Box, IconButton } from '@mui/material';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Box,
+  IconButton,
+  Link,
+} from '@mui/material';
 import { useContext } from 'react';
 import { TemaContext } from '../Context/ThemeContextProvider.';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -34,7 +41,20 @@ const Navbar = () => {
               alignItems: 'center',
             }}
           >
-            <Typography variant="h7">Proyectos</Typography>
+            <Link
+              mx={2}
+              sx={{
+                color: 'primary.contrastText',
+                '&:hover': {
+                  transition: 'all .5s ease',
+                  color: 'secondary.light',
+                },
+              }}
+              underline="none"
+              href="#proyectos"
+            >
+              Proyectos
+            </Link>
             <IconButton
               sx={{
                 ml: 1,
