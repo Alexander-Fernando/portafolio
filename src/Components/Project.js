@@ -19,11 +19,10 @@ const Project = () => {
         const data = doc.data();
         proyects.push({ ...data, id: doc.id });
       });
-      console.log(proyects);
       setProyectos(proyects);
     };
     getDatos();
-  }, []);
+  }, [cargarDataProyectos]);
 
   return (
     <>
