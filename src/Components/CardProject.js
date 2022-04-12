@@ -1,3 +1,4 @@
+import '../styles/Card.css';
 import {
   Button,
   Card,
@@ -15,9 +16,8 @@ const CardProject = ({
   data: { id, descripcion, img, tecnologias, title, urlRepo, urlView },
 }) => {
   return (
-    <Card sx={{
-      height: '480px'
-    }}>
+    <Card className="card">
+
       <CardActionArea
         sx={{
           '&:hover': {
@@ -32,9 +32,11 @@ const CardProject = ({
           width="50px"
           height="150px"
           alt="imagen referente al proyecto"
+          className="imgProjectS"
         />
       </CardActionArea>
-      <CardContent>
+
+      <CardContent sx={{flexGrow: 1 }}>
         <Typography variant="button">{title}</Typography>
         <Typography component="div">{descripcion}</Typography>
 
@@ -48,6 +50,7 @@ const CardProject = ({
           </List>
         </Typography>
       </CardContent>
+
       <CardActions
         sx={{
           display: 'flex',
@@ -61,6 +64,7 @@ const CardProject = ({
           View online
         </Button>
       </CardActions>
+
     </Card>
   );
 };

@@ -31,7 +31,7 @@ const Main = () => {
         backgroundColor: 'primary.light',
         px: {
           xs: 10,
-          xl: 30,
+          xl: 50,
         },
       }}
     >
@@ -75,7 +75,7 @@ const Main = () => {
           size="large"
           variant="contained"
           style={btnStyle}
-          href="https://drive.google.com/file/d/1Wby-mdiycXMfwPtDqFhGEckz8UBqRexY/view?usp=sharing"
+          href="https://drive.google.com/file/d/1BV7QlMD6JnfhqqyAOytVydVfb_MdI0xl/view?usp=sharing"
           target="_blank"
           fullWidth
         >

@@ -29,7 +29,10 @@ const Project = () => {
       <Grid item xs={12}>
         <Slider {...configuracion}>
           {proyectos.map((proyecto) => (
-            <CardProject key={proyecto.id} data={proyecto} />
+            <CardProject
+              key={proyecto.id}
+              data={proyecto}
+            />
           ))}
         </Slider>
 

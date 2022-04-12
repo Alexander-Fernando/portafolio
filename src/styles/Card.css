@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: 'red';
+  height: 550px;
+}
+
+.imgProject {
+  background-position: center;
+  background-size: cover;
+}
