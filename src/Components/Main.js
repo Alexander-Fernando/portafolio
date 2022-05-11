@@ -70,12 +70,13 @@ const Main = () => {
           Estoy en busca de mi primera oportunidad laboral para crecer
           profesionalmente y dar lo mejor de mí.
         </Typography>
+
         <Button
           color="primary"
           size="large"
           variant="contained"
           style={btnStyle}
-          href="https://drive.google.com/file/d/1BV7QlMD6JnfhqqyAOytVydVfb_MdI0xl/view?usp=sharing"
+          href="https://drive.google.com/file/d/127F0JKTXsOfr-T0n-VF1dVPNL8o-OWmO/view"
           target="_blank"
           fullWidth
         >
@@ -112,13 +113,13 @@ const Main = () => {
             >
               <Icon icon="logos:html-5" width={32} height={32} />
               <Icon icon="logos:css-3" width={32} height={32} />
+              <Icon icon="logos:php" width={32} height={32} />
               <Icon icon="logos:javascript" width={32} height={32} />
-              <Icon icon="logos:react" width={32} height={32} />
-              <Icon
+              {/* <Icon
                 icon="vscode-icons:file-type-typescript-official"
                 width={32}
                 height={32}
-              />
+              /> */}
             </Box>
           </Typography>
         </Box>
@@ -136,8 +137,8 @@ const Main = () => {
             Conocimientos
           </Typography>
           <Typography component="div" textAlign="center" color="text.primary">
-            Algunas herramientas, librerías que utilizo para el frontend.
-            Material UI, Boostrap y Styled-Components.
+            Algunas herramientas, librerías y/o frameworks: . Material UI,
+            Boostrap y Styled-Components, React, Laravel.
             <Box
               mt={2}
               sx={{
@@ -150,6 +151,8 @@ const Main = () => {
                 },
               }}
             >
+              <Icon icon="logos:laravel" width={32} height={32} />
+              <Icon icon="logos:react" width={32} height={32} />
               <Icon icon="logos:material-ui" width={32} height={32} />
               <Icon icon="akar-icons:bootstrap-fill" width={32} height={32} />
               <Icon
@@ -184,9 +187,9 @@ const Main = () => {
                 justifyContent: 'space-around',
               }}
             >
+              <Icon icon="logos:mysql" width={32} height={32} />
               <Icon icon="logos:nodejs" width={32} height={32} />
               <Icon icon="logos:firebase" width={32} height={32} />
-              <Icon icon="logos:mysql" width={32} height={32} />
               <Icon icon="logos:mongodb" width={32} height={32} />
             </Box>
           </Typography>
